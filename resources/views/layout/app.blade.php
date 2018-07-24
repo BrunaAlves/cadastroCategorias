@@ -7,10 +7,19 @@
     <title>Cadastro de Produtos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="{{URL::to('css/app.css')}}" rel="stylesheet">
-    
+    <style>
+        body{
+            padding: 20px;
+        }
+        .navbar{
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
+        @component('componente_navbar')
+        @endcomponent
         <main role="main">
             @hasSection('body')
                 @yield('body')
