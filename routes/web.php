@@ -28,3 +28,9 @@ Route::get('/categorias/apagar/{id}', 'ControladorCategoria@destroy');
 Route::get('/categorias/editar/{id}', 'ControladorCategoria@edit');
 
 Route::post('/categorias/{id}', 'ControladorCategoria@update');
+
+Route::get('/produtos/novo', 'ControladorProduto@create');
+
+Route::post('/produtos', 'ControladorProduto@store');
+
+
