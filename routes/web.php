@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/produtos', 'ControladorProduto@index');
+
+Route::get('/categorias', 'ControladorCategoria@index' );
